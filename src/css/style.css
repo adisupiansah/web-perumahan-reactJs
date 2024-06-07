@@ -1,0 +1,469 @@
+/* ============================> CSS CUSTOM ALL COMPONENTS <============================ */
+
+/* ============================> COMPONENT NAVBAR <============================ */
+/* buatkan navbar menjadi trasnparent */
+.navbar {
+  background-color: transparent;
+
+}
+/* navbar jika di scrol mengeluarkan bg-putih */
+.navbar-colored {
+  background-color: #ffff;
+  transition: ease-out 0.5s;
+}
+
+.navbar-colored .nav-link {
+  color: #222831;
+}
+.navbar-colored .nav-logo {
+  color: #222831;
+}
+.navbar-colored.navbar{
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link{
+  color: #ffff;
+}
+.nav-logo{
+  color: #ffff;
+}
+
+.nav-button-mode {
+  color: #FFA62F;
+  border-radius: 10px;
+}
+.nav-button-mode:hover {
+  background-color: #FFA62F;
+  color: #ffff;
+  transition: ease 0.3s;
+}
+.navbar-colored .nav-button-mode {
+  color: #222831;
+}
+
+/* ============================> COMPONENT HOME <============================ */
+.component-home {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: background-image ease-in-out 0.5s;
+  animation: slideIn 1s ease-in-out;
+}
+.component-home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(47, 46, 46, 0.7);
+}
+.home-judul {
+  z-index: 1;
+}
+.home-judul h1 {
+  font-size: 3.5rem;
+  color: #ffff;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.home-judul p {
+  font-size: 1.5rem;
+  color: #ffff;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.home-button {
+  margin-top: 20px;
+  z-index: 1;
+}
+.btn-home{
+  background-color: #2A629A;
+  color: #ffff;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+.btn-home:hover{
+  background-color: #ffff;
+  color: #2A629A;
+  border: 2px solid #2A629A;
+  transition: ease 0.3s;
+}
+
+/* ============================> COMPONENT ANAK HOME <============================ */
+.clas-anakhome{
+  margin-top: 2rem;
+  border-bottom: 1px solid #222831;
+}
+.anakhome-text{
+  margin-bottom: 2rem;
+}
+
+/* ============================> COMPONENT CARD RUMAH <============================ */
+.rumah{
+  margin-top: 100px;
+
+}
+.card-rumah{
+  margin-top: 20px;
+}
+.card-rumahdeskripsi p{
+  color: #222831;
+  margin-top: 10px;
+}
+
+/* ============================> COMPONENT CARD RUMAH 2 <============================ */
+.clas-cardrumah2{
+  margin-top: 7.5rem;
+}
+.cardrumah2-img{
+  width: 100%;
+  height: 250px;
+}
+.cardrumah2:hover{
+  color: #ffff;
+  background: linear-gradient(to right, #222831, #2A629A );
+}
+/* tombol view rumah */
+.cardrumah2-view{
+  background-color: #2A629A;
+  padding: 7px;
+  color: #ffff;
+  text-decoration: none;
+  border-radius: 14px;
+  font-weight: 500;
+}
+.cardrumah2-view:hover{
+  background-color: #ffff;
+  color: #2A629A;
+  border: 2px solid #2A629A;
+  transition: ease 0.3s;
+}
+.cardrumah2{
+  margin-bottom: 30px;
+}
+
+
+/* ============================> COMPONENT Jumbotron <============================ */
+.clas-jumbotron{
+  margin-top: 7rem;
+}
+.jumbotron-img{
+  width: 100%;
+}
+.jumbotron-title-text{
+  margin-top: 10rem;
+}
+.jumbotron-text{
+  text-align: justify;
+}
+.jumbotron-text p{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+   /* ============================> COMPONENT FOOTER <============================ */
+   .clas-footer{
+    margin-top: 7.5rem;
+    background-color: #2A629A;
+
+   }
+   .footer-text p {
+    color: #ffff;
+    font-size: 1rem;
+    font-weight: 500;
+   }
+   .footer-text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+   }
+   .footer-icon span{
+    font-size: 1rem;
+    color: #ffff;
+   }
+   .footer-icon .ikon{
+    color: #ffff;
+    font-size: 1.5rem;
+    margin-right: 10px; 
+   }
+
+   /* ============================> COMPONENT WHATSAPP <============================ */
+   .clas-whatsapp .form-control{
+    height: 3rem;
+   }
+   .clas-whatsapp .form-control:focus, .form-control:active{
+    border: 1.5px solid #2A629A;
+    box-shadow: none;
+    transition: ease-in 0.3s;
+   }
+   /* dark mode form whatsapp*/
+   .dark-mode .clas-whatsapp .form-control{
+    background-color: #1b1b1b;
+    color: #ffff;
+    border: 1px solid #ffff;
+   }
+   .dark-mode .clas-whatsapp .form-control::placeholder{
+    color: #ffff;
+   }
+   .dark-mode .clas-whatsapp .form-control:focus, .form-control:active{
+    border: 1.5px solid #2A629A;
+    box-shadow: none;
+    transition: ease-in 0.3s;
+
+   }
+
+   /* style untuk tombol icon component whatsapp di pojok kanan bawah */
+   .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  }
+  .whatsapp-form {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+  }
+  /* mode gelap tombol whatsapp */
+  .dark-mode .whatsapp-form{
+    background-color: #1b1b1b;
+  }
+
+
+
+   .clas-whatsapp .textarea{
+    height: 12rem;
+   }
+   .clas-whatsapp .whatsapp-tombol{
+    background-color: #2A629A;
+    color: #ffff;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+   }
+    .clas-whatsapp .whatsapp-tombol:hover{
+      background-color: #ffff;
+      color: #2A629A;
+      border: 2px solid #2A629A;
+      transition: ease 0.3s;
+    }
+
+   /* ============================> DARK mode <============================ */
+   .dark-mode{
+    background-color: #222831;
+    color: #ffff;
+   }
+   /* dark mode component navbar */
+   .dark-mode .navbar-colored{
+    background-color: #2A629A;
+   }
+  .dark-mode .navbar-colored, .dark-mode .nav-link, .dark-mode .nav-logo{
+    color: #ffff;
+  }
+  .dark-mode .nav-button-mode{
+    color: #FFA62F;
+  }
+  /* dark mode component anak home */
+  .dark-mode .clas-anakhome{
+    border-bottom: 1px solid #ffff;
+  }
+  /* dark mode component card rumah 2 */
+  .dark-mode .cardrumah2{
+    /* border: 1px solid #ffff; */
+    background-color: #1b1b1b;
+  }
+  .dark-mode .cardrumah2-title, .dark-mode .cardrumah2-text{
+    color: #ffff;
+  }
+
+  /* dark mode pages syarat kredit */
+  .dark-mode .syaratkredit-card{
+    background-color: #1b1b1b;
+    -webkit-box-shadow:0px 0px 99px 14px rgba(42,98,154,0.87);
+-moz-box-shadow: 0px 0px 99px 14px rgba(42,98,154,0.87);
+box-shadow: 0px 0px 99px 14px rgba(42,98,154,0.87);
+  }
+  .dark-mode .syaratkredit-pemohon{
+    color: #ffff;
+  }
+  .dark-mode .syaratkredit-cardheader{
+    color: #ffff;
+  }
+  .dark-mode .card-header{
+    background-color: #2A629A;
+    border-bottom: #ffff;
+  }
+
+  /* mode gelap buttton syrat kredit*/
+  .dark-mode .btn-syaratkredit{
+    background-color: #222831;
+    border: 2px solid #2A629A;
+    color: #ffff;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 5px 15px;
+  } 
+  .dark-mode .btn-syaratkredit:hover{
+    background-color: #2A629A;
+    color: #ffff;
+    transition: ease 0.3s;
+  }
+
+  /* ============================> Pages Detail Rumah <============================ */
+
+  .detailrumah-gambar img{
+    width: 100%; 
+    border-radius: 20px;
+  }
+ 
+  .detailrumah-deskripsi{
+    margin-left: 50px;
+  }
+
+  .detailrumah-back{
+    background-color: #2A629A;
+    padding: 7px 50px;
+    color: #ffff;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+  .detailrumah-back:hover{
+    background-color: #ffff;
+    color: #2A629A;
+    border: 2px solid #2A629A;
+    transition: ease 0.3s;
+  }
+
+    /* ============================> Pages Syarat Kredit <============================ */
+    .syaratkredit-pemohon li{
+        text-align: justify;
+    }
+    .syaratkredit-button{
+      margin-top: 2rem;
+    }
+     
+    /* ketika button di mode siang */
+    .btn-syaratkredit{
+      background-color: #2A629A;
+      color: #ffff;
+      font-weight: 600;
+      border-radius: 5px;
+      padding: 5px 15px;
+      text-decoration: none;
+    }
+    .btn-syaratkredit:hover{
+      background-color: #ffff;
+      color: #2A629A;
+      border: 2px solid #2A629A;
+      transition: ease 0.3s;
+    }
+   
+
+  /* ============================> GAMBAR ERROR <============================ */
+  .gambar-error{
+    width: 50%;
+  }
+
+/* ============================> CSS CUSTOM MOBILE <============================ */
+@media (max-width: 768px) {
+   /* ============================> COMPONENT NaVBAR <============================ */
+   .toggle{
+    border: 0;
+    font-size: 18px;
+    margin-right: -10px;
+   }
+   .toggle .navbar-toggler-icon{
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+   }
+   .navbar-colored .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+   }
+   .nav-button-mode {
+    font-size: 20px;
+  }
+
+  /* ============================> COMPONENT HOME <============================ */
+  .component-home {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .home-judul h1 {
+    font-size: 2.5rem;
+  }
+  .home-judul p {
+    font-size: 1rem;
+  }
+  .component-home::before {
+    background-color: rgba(47, 46, 46, 0.7);
+  }
+
+  /* ============================> COMPONENT CARD RUMAH <============================ */
+  .card-rumahdeskripsi p{
+    color: #222831;
+    margin-top: 10px; 
+  }
+  .card-rumah{
+    margin-top: 20px;
+  }
+
+    /* ============================> COMPONENT CARD RUMAH 2 <============================ */
+  .cardrumah2{
+    margin-bottom: 28px;
+
+  }
+
+   /* ============================> COMPONENT JUMBOTRON <============================ */
+   .jumbotron-title-text{
+     margin-top: 0;
+     padding-top: 2.5rem;
+   }
+   .jumbotron-title h2{
+      text-align: center;
+   }
+
+    /* ============================> COMPONENT FOOTER <============================ */
+    .footer-text {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* dark mode */
+    .dark-mode .toggle .navbar-toggler-icon{
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+     /* ============================> Pages Detail Rumah <============================ */
+    .detailrumah-deskripsi{
+      margin-top: 2rem;
+      margin-left: 0;
+      text-align: justify;
+    }
+
+     /* ============================> Pages Syarat Kredit <============================ */
+      .syaratkredit-card{
+        margin-top: 5rem;
+      }
+}
