@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { RumahContext } from '../context/Rumah';
 import { Row, Col, Container } from 'react-bootstrap';
 import { numberWithCommas } from '../components/format/util';
+import Nodata from '../assets/img/no-data.png';
 
 
 function DetailRumah() {
@@ -12,7 +13,12 @@ function DetailRumah() {
   const selectedRumah = rumah.find((item) => item.id === parseInt(id));
 
   if (!selectedRumah) {
-    return <div className='d-flex justify-content-center align-items-center vh-100'><h3>Rumah tidak ditemukan</h3></div>;
+    return(
+      <div className='d-flex flex-column justify-content-center align-items-center vh-100'>
+        <img src={Nodata} alt="No Data" className='detailrumah-gambar'/>
+        <h3 className='detailrumah-judul'>Maaf Rumah tidak ada</h3>
+      </div>
+    )
   }
 
   return (

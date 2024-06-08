@@ -28,6 +28,13 @@
 .nav-logo{
   color: #ffff;
 }
+.nav-img-logo{
+  width: 40px;
+}
+.dark-mode .nav-img-logo{
+  background-color: #222831;
+  border-radius: 50px;
+}
 
 .nav-button-mode {
   color: #FFA62F;
@@ -460,6 +467,12 @@ box-shadow: 0px 0px 99px 14px rgba(42,98,154,0.87);
       margin-top: 2rem;
       margin-left: 0;
       text-align: justify;
+    }
+    .detailrumah-gambar{
+      width: 50%;
+    }
+    .detailrumah-judul{
+      font-size: 1.2rem;
     }
 
      /* ============================> Pages Syarat Kredit <============================ */

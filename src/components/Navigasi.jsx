@@ -5,6 +5,7 @@ import { FaMoon } from "react-icons/fa";
 import { FaSun } from "react-icons/fa";
 
 
+
 const Navigasi = ({ handleDarkMode, darkMode }) => {
   // state untuk navbar jika di scroll menjadi bg-white
   const [navbarColor, setNavbarColor] = useState("");
@@ -29,7 +30,7 @@ const Navigasi = ({ handleDarkMode, darkMode }) => {
     <div className="component-navigasi">
       <Navbar expand="lg" className={`fixed-top ${navbarColor ? 'navbar-colored' : 'navbar-transparent'}`}>
       <Container>
-        <Navbar.Brand href="/" className="nav-logo">Rumah-Group</Navbar.Brand>
+        <Navbar.Brand href="/" className="nav-logo"><img src="/logo-web-perumahan.png" alt="..." className="nav-img-logo"/> Rumah-Group</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="ms-auto toggle" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto mx-2">
